@@ -136,7 +136,7 @@ fun LoginScreen() {
         Button(
             onClick = {},
             colors = ButtonDefaults.buttonColors(
-                containerColor = if (email.isNotEmpty() && password.isNotEmpty()) Color(0xFF1493ff) else Color(0xFFB0D4FA),
+                containerColor = if (email != "user@example.com"  && password.isNotEmpty()) Color(0xFF1493ff) else Color(0xFFB0D4FA),
                 contentColor = Color.White
             ),
             modifier = Modifier
